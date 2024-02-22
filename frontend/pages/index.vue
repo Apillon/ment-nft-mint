@@ -19,12 +19,17 @@ useHead({
       <p class="body-lg">
         By signing up, you’ll be in the game for the hottest perks in the form of MENT token
       </p>
-      <div class="max-w-sm">
-        <FormSighUp btn-text="Sign up" />
-      </div>
+      <FormSighUp btn-text="Sign up" />
     </div>
-    <div v-if="isMd" class="flex-cc relative min-w-[20rem] w-full lg:w-1/2">
-      <img :src="SuperRareJpg" class="mx-auto" width="461" height="461" alt="Super rare NFT" />
+    <div class="flex-cc relative min-w-[20rem] w-full lg:w-1/2">
+      <img
+        v-if="isMd"
+        :src="SuperRareJpg"
+        class="mx-auto"
+        width="461"
+        height="461"
+        alt="Super rare NFT"
+      />
       <Btn
         class="!text-black mt-3"
         size="large"
